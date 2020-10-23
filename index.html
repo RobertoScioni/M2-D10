@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Bootstrap JavaScript-->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			crossorigin="anonymous"
+		></script>
+
+		<!--MyCss-->
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+
+		<title>I cannot believe it's not G.O.G.</title>
+	</head>
+	<body>
+		<!--NAVBAR-->
+		<nav class="banner navbar sticky-top navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">
+				<!--i will not loose time searching for a render when THEY hardcoded an svg-->
+				<svg
+					preserveAspectRatio="xMidYMax meet"
+					viewBox="0 0 34 31"
+					id="icon-logo-gog"
+				>
+					<path
+						class="logo"
+						d="M31,31H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0H31a3,3,0,0,1,3,3V28A3,3,0,0,1,31,31ZM4,24.5A1.5,1.5,0,0,0,5.5,26H11V24H6.5a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5H11V18H5.5A1.5,1.5,0,0,0,4,19.5Zm8-18A1.5,1.5,0,0,0,10.5,5h-5A1.5,1.5,0,0,0,4,6.5v5A1.5,1.5,0,0,0,5.5,13H9V11H6.5a.5.5,0,0,1-.5-.5v-3A.5.5,0,0,1,6.5,7h3a.5.5,0,0,1,.5.5v6a.5.5,0,0,1-.5.5H4v2h6.5A1.5,1.5,0,0,0,12,14.5Zm0,13v5A1.5,1.5,0,0,0,13.5,26h5A1.5,1.5,0,0,0,20,24.5v-5A1.5,1.5,0,0,0,18.5,18h-5A1.5,1.5,0,0,0,12,19.5Zm9-13A1.5,1.5,0,0,0,19.5,5h-5A1.5,1.5,0,0,0,13,6.5v5A1.5,1.5,0,0,0,14.5,13h5A1.5,1.5,0,0,0,21,11.5Zm9,0A1.5,1.5,0,0,0,28.5,5h-5A1.5,1.5,0,0,0,22,6.5v5A1.5,1.5,0,0,0,23.5,13H27V11H24.5a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h3a.5.5,0,0,1,.5.5v6a.5.5,0,0,1-.5.5H22v2h6.5A1.5,1.5,0,0,0,30,14.5ZM30,18H22.5A1.5,1.5,0,0,0,21,19.5V26h2V20.5a.5.5,0,0,1,.5-.5h1v6h2V20H28v6h2ZM18.5,11h-3a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h3a.5.5,0,0,1,.5.5v3A.5.5,0,0,1,18.5,11Zm-4,9h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,1-.5-.5v-3A.5.5,0,0,1,14.5,20Z"
+					></path>
+				</svg>
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarText"
+				aria-controls="navbarText"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="storeDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							STORE
+						</a>
+						<div
+							class="dropdown-menu dropdownGOG"
+							aria-labelledby="storeDropdown"
+						>
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="aboutDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							ABOUT
+						</a>
+						<div
+							class="dropdown-menu dropdownGOG"
+							aria-labelledby="aboutDropdown"
+						>
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="communityDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							COMMUNITY
+						</a>
+						<div
+							class="dropdown-menu dropdownGOG"
+							aria-labelledby="communityDropdown"
+						>
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="supportDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							SUPPORT
+						</a>
+						<div
+							class="dropdown-menu dropdownGOG"
+							aria-labelledby="supportDropdown"
+						>
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="signInDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							SIGN IN
+						</a>
+						<div
+							class="dropdown-menu dropdownGOG"
+							aria-labelledby="signInDropdown"
+						>
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<span class="nav-item dropdown icon">
+					<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						id="cartDropdown"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<svg
+							preserveAspectRatio="xMidYMax meet"
+							viewBox="0 0 17 16.1"
+							id="icon-cart2"
+						>
+							<path
+								class="logo"
+								d="M16.8,1.5l-1.8,0L13,11l-1,1l-9,0l-1.1-1L0,3l1.5,0l2.1,7.6h7.7L13.4,1l1-1L17,0L16.8,1.5z
+                                    M4.6,8.2V7.7h5.8v0.5L4.6,8.2L4.6,8.2z M4.3,5.6h6.2l0,0.5l-6.2,0V5.6L4.3,5.6z M3.5,4l0-0.4h7.9l0,0.4L3.5,4z M4.5,13
+                                    C5.3,13,6,13.6,6,14.4c0,0,0,0.1,0,0.1c0,0.9-0.7,1.6-1.5,1.6c0,0,0,0,0,0C3.7,16,3,15.4,3,14.6c0,0,0-0.1,0-0.1
+                                    c0-0.8,0.5-1.4,1.3-1.5C4.4,13,4.4,13,4.5,13L4.5,13z M10.4,13c0.8-0.1,1.6,0.6,1.6,1.4c0,0,0,0,0,0c0,0.9-0.7,1.6-1.6,1.6
+                                    c-0.8,0-1.5-0.7-1.5-1.5C8.9,13.7,9.6,13,10.4,13L10.4,13L10.4,13z"
+							></path>
+						</svg>
+					</a>
+					<div
+						class="dropdown-menu dropdown-menu-right dropdownGOG"
+						aria-labelledby="cartDropdown"
+					>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</span>
+				<span class="navbar-text active brand icon">
+					<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						id="search"
+						role="button"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<svg
+							preserveAspectRatio="xMidYMax meet"
+							viewBox="0 0 13.8 15"
+							id="icon-search2"
+						>
+							<path
+								d="M13.8,13.7L12.2,15L9,11.1C8.1,11.7,7.1,12,6,12c-3.2,0.1-5.9-2.4-6-5.6C0,6.3,0,6.1,0,6
+                        c0-3.3,2.7-6,6-6s6,2.7,6,6c0,1.5-0.6,3-1.6,4.1L13.8,13.7z M6,1.6c-2.3-0.1-4.3,1.6-4.5,4c0,0.1,0,0.3,0,0.4c0,2.5,1.9,4.5,4.4,4.6
+                        s4.5-1.9,4.6-4.4C10.5,3.7,8.6,1.6,6,1.6C6.1,1.6,6,1.6,6,1.6z"
+							></path>
+						</svg>
+					</a>
+				</span>
+			</div>
+		</nav>
+		<!--SEARCHBAR FUUUCK
+		<div class="container mx-auto searchbar">
+			<div class="dropdown">
+				<button
+					class="btn btn-secondary categorySelector"
+					type="button"
+					id="categories"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					All Games
+				</button>
+				<div class="dropdown-menu" aria-labelledby="categories">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<input type="text" class="searchString" />
+			</div>
+        </div>-->
+		<!--Carousel-->
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide show-neighbors"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleCaptions"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="images/c9ce57133ee4ead204e1ad8e928b678c92127f110e4a96a8530c540a12b3.jpg"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/cd4c4b197417ba73fb1b2b9267a2d3d2a90c35b3d60328e8c21579e582e8.jpg"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Second slide label</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/6ed22c441738269ca2e1581f9a3a67681b0c2a89ba9131b1b5f59d2e45fe.jpg"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Third slide label</h5>
+						<p>
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						</p>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!--discounts-->
+		<div class="d-flex justify-content-center my-3">
+			<div class="card-deck discount">
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---the separator-->
+		<div class="d-flex separator py-1 justify-content-center">
+			<span class="propaganda">
+				We are GOG.COM, the DRM-free home for a curated selection of games. This
+				place was made for gamers so make yourself at home.
+			</span>
+			<span class="objective"> The new GOG GALAXY 2.0 </span>
+		</div>
+		<!--jumbotron 4 giveaway-->
+		<div id="giveaway1" class="jumbotron jumbotron-fluid my-3">
+			<div class="container">
+				<h1 class="display-4">Fluid jumbotron</h1>
+				<p class="lead">
+					This is a modified jumbotron that occupies the entire horizontal space
+					of its parent.
+				</p>
+			</div>
+		</div>
+		<!--now on sale-->
+		<!--control bar-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">now on sale</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="uno nav-link" onclick="switcharoo(event)"
+							>Featured Deals <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="due nav-link" onclick="switcharoo(event)">Aquanox</a>
+					</li>
+					<li class="nav-item">
+						<a class="tre nav-link" onclick="switcharoo(event)">weekly sale</a>
+					</li>
+					<li class="nav-item">
+						<a class="quattro nav-link" onclick="switcharoo(event)"
+							>surviving mars</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">more</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--relative divs-->
+		<div class="sales d-flex justify-content-center">
+			<div class="card-deck .row-cols-md-2 unoTg">
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="images/55bad7c5bb1a9bdfb34e9ae97e13e674f7d1756ded14370e69a8ebfb5618.jpg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-deck dueTg d-none">due</div>
+			<div class="card-deck treTg d-none">tre</div>
+			<div class="card-deck quattroTg d-none">quattro</div>
+		</div>
+	</body>
+</html>

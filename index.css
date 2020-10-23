@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #d8d8d8;
+	font-family: sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0;
+}
+
+.banner {
+	background: url(images/bg.png) repeat-x top center rgba(26, 26, 26, 0.9);
+	height: 56px;
+	padding: 0;
+	padding-top: 4px;
+	box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.banner * {
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+
+.logo {
+	color: rgb(204, 204, 204);
+	fill: white;
+	font-size: 0;
+}
+.dropdownGOG {
+	height: auto;
+	background-color: white;
+}
+
+#signInDropdown {
+	color: #de8ae5;
+}
+
+.nav-link {
+	color: #ccc;
+	font-size: 14px;
+}
+
+.nav-item {
+	color: #ccc;
+	font-size: 14px;
+	height: 20px;
+}
+
+.icon {
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+}
+.icon path {
+	fill: #ccc;
+}
+
+.searchbar {
+	margin-top: 64px;
+	padding: 0;
+	border-style: solid;
+	border-color: rgb(191, 191, 191);
+	border-width: 1px;
+	background-color: white;
+}
+
+.categorySelector {
+	margin: 0;
+	background-color: #d8d8d8;
+	font-weight: 600;
+	font-size: 16px;
+	color: #78387b;
+	width: 29.9%;
+	height: 46px;
+	border-style: none;
+	border-radius: 0;
+	border-right-style: solid;
+}
+.searchString {
+	padding: 0;
+	height: 46px;
+	width: 69.7%;
+	border-style: none;
+	border-radius: 0;
+	border-width: 1px;
+	outline-color: #78387b;
+}
+
+/*slider*/
+/*$fragment_width: 25%;
+
+.show-neighbors {
+	overflow: hidden;
+
+	.item__third:first-child,
+	.item__third:last-child {
+		display: none;
+	}
+
+	@media (min-width: 500px) {
+		.carousel-indicators {
+			margin-right: $fragment_width;
+			margin-left: $fragment_width;
+		}
+
+		.carousel-control-prev,
+		.carousel-control-next {
+			background: rgba(255, 255, 255, 0.3);
+			width: $fragment_width;
+			z-index: 11; /* .carousel-caption has z-index 10 
+		}
+
+		.carousel-inner {
+			width: (100% - 2 * $fragment_width) * 3;
+			left: 3 * $fragment_width - 100%;
+		}
+
+		.carousel-item-next:not(.carousel-item-left),
+		.carousel-item-right.active {
+			-webkit-transform: translate3d(33%, 0, 0);
+			transform: translate3d(33%, 0, 0);
+		}
+
+		.carousel-item-prev:not(.carousel-item-right),
+		.carousel-item-left.active {
+			-webkit-transform: translate3d(-33%, 0, 0);
+			transform: translate3d(-33%, 0, 0);
+		}
+
+		.item__third {
+			display: block !important;
+			float: left;
+			position: relative;
+			width: 33.33333333%;
+		}
+	}
+}*/
+
+/*the slider was a fail and i have no time to debug it...*/
+
+/*discounts no more fine detailing now we go fast and dirty 
+    i'll clean this stuff up after completing the whole structure
+    i'll try to keep documenting the code*/
+
+.discount .card {
+	max-width: 256px;
+}
+/*the jumbotron*/
+.jumbotron {
+	padding: 0;
+	max-height: 112px;
+	background-image: url("images/galaxy_button_bg.jpg");
+	background-size: cover;
+	color: whitesmoke;
+}
+/*the separator, yes i missed it so? sue me!*/
+.separator {
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: rgb(191, 191, 191);
+	font-size: 14px;
+}
+.propaganda {
+	border-right-style: solid;
+	border-width: 1px;
+	width: 787px;
+	padding-right: 60px;
+}
+.objective {
+	margin-left: 44px;
+}
