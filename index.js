@@ -14,6 +14,7 @@
 		prev.children(":nth-last-child(2)").clone().prependTo($(this))
 	})
 */
+//#region SECTION the separator
 const switcharoo = (E) => {
 	document.querySelectorAll(".sales>.card-deck").forEach((card) => {
 		card.classList.add("d-none")
@@ -21,3 +22,4 @@ const switcharoo = (E) => {
 	const classe = E.target.classList[0]
 	document.querySelector("." + classe + "Tg").classList.toggle("d-none")
 }
+//#endregion !SECTION

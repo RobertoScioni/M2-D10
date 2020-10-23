@@ -8,7 +8,7 @@ body {
 	line-height: 1;
 	letter-spacing: 0;
 }
-
+/*SECTION*/
 .banner {
 	background: url(images/bg.png) repeat-x top center rgba(26, 26, 26, 0.9);
 	height: 56px;
@@ -22,7 +22,7 @@ body {
 	text-align: center;
 	line-height: 40px;
 }
-
+/*!section*/
 .logo {
 	color: rgb(204, 204, 204);
 	fill: white;
@@ -88,7 +88,7 @@ body {
 	outline-color: #78387b;
 }
 
-/*slider*/
+/* #region slider*/
 /*$fragment_width: 25%;
 
 .show-neighbors {
@@ -138,7 +138,7 @@ body {
 	}
 }*/
 
-/*the slider was a fail and i have no time to debug it...*/
+/*#endregion the slider was a fail and i have no time to debug it...*/
 
 /*discounts no more fine detailing now we go fast and dirty 
     i'll clean this stuff up after completing the whole structure
